@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.je.hospital</groupId>
     <artifactId>hospital-app</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>Example for learning purpouses</name>
     <description>This is an example for some spring boot features, api rest exercises, spring boot ms</description>
     <url/>
@@ -72,6 +72,7 @@
     </dependencies>
 
     <build>
+        <finalName>${project.artifactId}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

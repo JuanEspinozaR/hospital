@@ -9,9 +9,9 @@ spring:
     hibernate:
       ddl-auto: update
   datasource:
-    url: jdbc:mysql://localhost:3307/swagger-example
-    username: root
-    password: strong_password
+    url: jdbc:mysql://${MYSQL_HOST:test-mysql}:${MYSQL_PORT:3306}/${MY_SQL_DB_NAME:swagger-example}
+    username: ${MYSQL_USER:root}
+    password: ${MYSQL_PWD:strong_password}
 springdoc:
   api-docs:
     path: /open-api/api-docs
