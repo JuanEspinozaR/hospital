@@ -28,7 +28,6 @@ jobs:
     - name: Build with Maven
       run: mvn clean install
     - name: Build and push docker image based on a dockerfile
-      run: mvn clean install
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
         image: jespinoza58/spring-boot-h
