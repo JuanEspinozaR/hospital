@@ -1,0 +1,19 @@
+server:
+  port: 3443
+  servlet:
+    context-path: /hospital
+spring:
+  application:
+    name: Hospital App
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost:3307/swagger-example
+    username: root
+    password: strong_password
+springdoc:
+  api-docs:
+    path: /open-api/api-docs
+  swagger-ui:
+    path: /open-api/index.html
